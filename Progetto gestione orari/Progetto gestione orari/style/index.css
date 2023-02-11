@@ -1,0 +1,123 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+body{
+  background-color: #a2beec;
+  height: 100vh;
+}
+header{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #1d70f5;
+    color: rgb(255, 255, 255);
+    padding: 1.5em;
+    font-size: 1.3em;
+}
+/* The side navigation menu */
+#sidebar {
+  margin: 0;
+  padding: 0em;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  display: none;
+}
+
+/* Sidebar links */
+#sidebar a {
+  display: block;
+  color: black;
+  padding-bottom:1em ;
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+  font-size: 1.5em;
+  
+}
+#sidebar p{
+  margin-left: 8px;
+}
+.active p{
+  color: #1d70f5; 
+} 
+/* Links on mouse-over */
+#sidebar a:hover:not(.active) {
+  color: #1d70f5;
+}
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    height: 1000px;
+}
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}
+#butClose{
+  cursor: pointer;
+  border: none;
+  margin-top: 0.5em;
+  margin-left: 11em;
+  
+}
+#Apri{
+  border: none;
+  position: absolute;
+  background-color: transparent;
+  margin: 1em;
+}
+#Apri img{
+  width: 4em;
+}
+#Apri:hover{
+  cursor: pointer;
+}
+
+#orario{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  border: solid 1px black;
+}
+.giorno{
+  height: 100%;
+  width: 16.6666%;
+  background-color: rebeccapurple;
+  border: solid 1px black;
+}
+.ora{
+  width: 100%;
+  height: 9.0909%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black; 
+}
+
+.legendaOra{
+  width: 100%;
+  height: 9.0909%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
